@@ -5,4 +5,4 @@
 ## 希望该题解对你有帮助！
 
 
-## <a href="mailto:183964286@qq.com?subject=leetcode--Tencent的相关问题&body=邮件内容">如有问题，点击此处与我邮件联系!</a>
+## <a href="mailto:183964286@qq.com?subject=leetcode--Tencent的相关问题！&body=邮件内容">如有问题，点击此处与我邮件联系!</a>
