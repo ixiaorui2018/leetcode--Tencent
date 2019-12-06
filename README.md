@@ -6,3 +6,7 @@
 
 
 ## <a href="mailto:183964286@qq.com?subject=leetcode--Tencent的相关问题！&body=邮件内容">如有问题，点击此处与我邮件联系!</a>
+
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/ixiaorui2018/leetcode--Tencent.svg)](https://starchart.cc/ixiaorui2018/leetcode--Tencent)
