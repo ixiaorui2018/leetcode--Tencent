@@ -1,8 +1,8 @@
 # leetcode 160 相交链表
+
 ## edited by 王少锐
+
 ## c++
-
-
 
 ```cpp
 /**
@@ -22,12 +22,14 @@
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        if(headA==NULL||headB==NULL)return NULL;
-        ListNode *p1=headA,*p2=headB;
-        while(true){
-            if(p1==p2)break;
-            p1=p1==NULL?headB:p1->next;
-            p2=p2==NULL?headA:p2->next;
+        if (headA == NULL || headB == NULL)
+            return NULL;
+        ListNode *p1 = headA, *p2 = headB;
+        while (true) {
+            if (p1 == p2)
+                break;
+            p1 = p1 == NULL ? headB : p1->next;
+            p2 = p2 == NULL ? headA : p2->next;
         }
         return p1;
     }

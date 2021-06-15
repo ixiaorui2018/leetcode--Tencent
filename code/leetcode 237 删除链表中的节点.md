@@ -1,8 +1,8 @@
 # leetcode 237 删除链表中的节点
+
 ## edited by 王少锐
+
 ## c++
-
-
 
 ```cpp
 /**
@@ -16,10 +16,9 @@
 class Solution {
 public:
     void deleteNode(ListNode* node) {
-        node->val=node->next->val;
-        node->next=node->next->next;
+        node -> val = node -> next -> val;
+        node -> next = node -> next -> next;
     }
 };
 
 ```
-

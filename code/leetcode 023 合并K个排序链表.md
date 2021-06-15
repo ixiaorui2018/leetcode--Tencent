@@ -1,7 +1,8 @@
-# leetcode 023 合并K个排序链表
-## edited by 王少锐
-## Java
+# leetcode 023 合并 K 个排序链表
 
+## edited by 王少锐
+
+## Java
 
 ```java
 /**
@@ -48,4 +49,3 @@ class Solution {
 }
 
 ```
-

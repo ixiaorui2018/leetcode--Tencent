@@ -1,10 +1,11 @@
 # leetcode 124 二叉树中的最大路径和
+
 ## edited by 王少锐
+
 ## c++/Java
 
-
-
 #### 这道题有些争议，c++写法有一个测试样例，网页本地控制台执行是对的，提交出错!
+
 ```cpp
 /**
  * Definition for a binary tree node.
@@ -23,16 +24,17 @@
         **/
 
 int ret = -1000000000;
-int getMax(TreeNode* root){
-    if(root==NULL)return 0;
-    int left=max(0,getMax(root->left));
-    int right=max(0,getMax(root->right));
-    ret=max(ret,root->val+left+right);
-    return max(left,right)+root->val;
+int getMax(TreeNode *root) {
+    if (root == NULL)
+        return 0;
+    int left = max(0, getMax(root->left));
+    int right = max(0, getMax(root->right));
+    ret = max(ret, root->val + left + right);
+    return max(left, right) + root->val;
 }
 class Solution {
 public:
-    int maxPathSum(TreeNode* root) {
+    int maxPathSum(TreeNode *root) {
         getMax(root);
         return ret;
     }
@@ -40,25 +42,25 @@ public:
 
 ```
 
-#### 基于上面的问题，写一个Java的写法!思路和c++一致!
+#### 基于上面的问题，写一个 Java 的写法!思路和 c++一致!
+
 ```java
 class Solution {
-    
+
     private int ret = Integer.MIN_VALUE;
-    
+
     public int maxPathSum(TreeNode root) {
         getMax(root);
         return ret;
     }
-    
+
     private int getMax(TreeNode r) {
         if(r == null) return 0;
-        int left = Math.max(0, getMax(r.left)); 
+        int left = Math.max(0, getMax(r.left));
         int right = Math.max(0, getMax(r.right));
-        ret = Math.max(ret, r.val + left + right); 
+        ret = Math.max(ret, r.val + left + right);
         return Math.max(left, right) + r.val;
     }
 }
 
 ```
-

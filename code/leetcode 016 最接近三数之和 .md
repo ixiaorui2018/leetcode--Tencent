@@ -1,7 +1,8 @@
 # leetcode 016 最接近三数之和
-## edited by 王少锐
-## Java
 
+## edited by 王少锐
+
+## Java
 
 ```java
 class Solution {
@@ -34,4 +35,3 @@ class Solution {
 }
 
 ```
-

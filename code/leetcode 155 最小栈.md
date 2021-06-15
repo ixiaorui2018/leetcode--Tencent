@@ -1,10 +1,11 @@
 # leetcode 155 最小栈
+
 ## edited by 王少锐
+
 ## c++
 
-
-
 ### 即实现栈操作，这里耍个小聪明，使用辅助栈!
+
 ```cpp
 class MinStack {
 public:
@@ -12,27 +13,27 @@ public:
     stack<int> minstack;
     /** initialize your data structure here. */
     MinStack() {
-        
+
     }
-    
+
     void push(int x) {
         data.push(x);
         if(minstack.empty() || x <= minstack.top()){
             minstack.push(x);
         }
     }
-    
+
     void pop() {
         if(data.top() == minstack.top()){
             minstack.pop();
         }
         data.pop();
     }
-    
+
     int top() {
         return data.top();
     }
-    
+
     int getMin() {
         return minstack.top();
     }
@@ -48,24 +49,27 @@ public:
  */
 
 ```
+
 ### 当然应该正式要这么写！不使用辅助栈！
+
 ### 以下这两种写法均来自评论区大佬，不是我自己写的，因为我赶时间哈哈哈！
 
 #### 链表实现！
+
 ```java
 class MinStack {
     List<Integer> list=new LinkedList<Integer>();
     int minNum=Integer.MAX_VALUE;
     /** initialize your data structure here. */
     public MinStack() {
-        
-    }  
+
+    }
     public void push(int x) {
         list.add(x);
         if(x<minNum){
             minNum=x;
         }
-    }   
+    }
     public void pop() {
         if(minNum==list.get(list.size()-1)){
             minNum=Integer.MAX_VALUE;
@@ -77,13 +81,13 @@ class MinStack {
         }
         if(list.size()!=0){
             list.remove(list.size()-1);
-        } 
+        }
     }
-    
-    public int top() {  
+
+    public int top() {
         return list.get(list.size()-1);
     }
-    
+
     public int getMin() {
         return minNum;
     }
@@ -93,6 +97,7 @@ class MinStack {
 ```
 
 #### 数组写法！
+
 ```java
 import java.util.EmptyStackException;
 class MinStack {

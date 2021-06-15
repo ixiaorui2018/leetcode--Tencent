@@ -1,8 +1,8 @@
 # leetcode 236 二叉树的最近公共祖先
+
 ## edited by 王少锐
+
 ## Java
-
-
 
 ```java
 /**
@@ -36,4 +36,3 @@ class Solution {
 }
 
 ```
-
