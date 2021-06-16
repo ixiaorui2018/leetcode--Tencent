@@ -2,7 +2,7 @@
 
 ## edited by 王少锐
 
-## Javascript
+## JavaScript
 
 ```javascript
 /**
@@ -54,5 +54,4 @@ var findMedianSortedArrays = function (nums1, nums2) {
     }
     return 0.0;
 };
-
 ```
